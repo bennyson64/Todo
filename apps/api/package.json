@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "pnpm run copy-workspace && tsc",
-    "copy-workspace": "rm -rf node_modules/@workspace && mkdir -p node_modules/@workspace && cp -r ../../packages/db node_modules/@workspace/ && cp -r ../../packages/types node_modules/@workspace/",
+    "build": "tsc",
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
